@@ -39,3 +39,19 @@ Organizations face two major security challenges:
 
 Security Copilot allows analysts to process security signals at machine speed, reducing mean time to respond (MTTR) and enabling faster containment of threats.
 
+## Key capabilities
+Security Copilot assists across three main stages of security operations:
+
+1. Investigation – summarizes security incidents into understandable context
+2. Analysis – generates queries and interprets suspicious scripts
+3. Response – provides step-by-step remediation guidance
+
+## Grounded AI concept
+Unlike general AI systems, Security Copilot uses organization-specific security telemetry such as logs, identities, endpoints, and threat intelligence.  
+This “grounding” enables accurate and context-aware incident analysis.
+
+## Integration
+Copilot integrates with existing security tools and knowledge bases and processes large-scale threat intelligence signals to correlate events automatically.
+
+## Enterprise benefit
+Allows organizations to operate security operations at machine speed instead of human speed, improving detection accuracy and reducing response latency.
