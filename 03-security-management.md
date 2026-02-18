@@ -8,3 +8,4 @@ this layer identifies misconfigurations and active threats.
 
 Key idea:
 Security is not a one-time setup — it is continuously evaluated.
+
