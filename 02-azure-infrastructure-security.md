@@ -50,3 +50,31 @@ Azure DDoS Protection filters malicious traffic before it reaches application in
 Azure infrastructure protection safeguards the platform, but application-specific DDoS protection applies tuned thresholds and monitoring to protect individual services.
 
 Availability protection is critical in financial systems where downtime directly impacts transactions.
+
+## Azure Firewall
+Azure Firewall is a managed, cloud-based traffic control system that filters inbound and outbound network traffic based on defined security rules.
+
+### Architecture model
+Often deployed in a centralized hub-and-spoke model:
+- Central VNet hosts the firewall
+- All other VNets route traffic through it
+- Enables centralized traffic governance
+
+### Key capabilities
+- Stateful inspection (tracks active connections)
+- Network-level filtering (IP, port, protocol)
+- Application-level filtering (FQDN / HTTP/S rules)
+- Source and Destination NAT (SNAT/DNAT)
+- Threat intelligence-based blocking
+- Built-in high availability across zones
+
+### Financial infrastructure relevance
+Firewalls enforce strict traffic control policies between:
+- Internet and applications
+- Internal microservices
+- Cloud and on-premises systems
+
+Centralized firewall design improves auditability and policy consistency.
+
+### Integration with Security Copilot
+Firewall logs can be sent to Log Analytics and analyzed via Security Copilot, linking preventive controls with investigative capabilities.
