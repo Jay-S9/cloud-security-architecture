@@ -29,3 +29,24 @@ Security must therefore protect resources from multiple directions rather than a
 Azure provides configurable layered controls to protect availability, network access, and sensitive data.
 
 This reflects the shift from perimeter security to distributed security architecture.
+
+## Azure DDoS Protection
+DDoS attacks attempt to overwhelm services with excessive traffic, making systems unavailable to legitimate users.
+
+Azure DDoS Protection filters malicious traffic before it reaches application infrastructure.
+
+### Protection mechanism
+- Learns normal traffic patterns
+- Detects abnormal spikes
+- Drops attack traffic
+- Allows legitimate users
+
+### Attack layers
+- L3 (Network): volumetric bandwidth flooding
+- L4 (Transport): connection exhaustion
+- L7 (Application): handled separately by WAF
+
+### Why needed beyond default protection
+Azure infrastructure protection safeguards the platform, but application-specific DDoS protection applies tuned thresholds and monitoring to protect individual services.
+
+Availability protection is critical in financial systems where downtime directly impacts transactions.
