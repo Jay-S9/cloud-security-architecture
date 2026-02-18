@@ -184,3 +184,32 @@ NSG → protects individual VM/subnet (micro protection)
 Azure Firewall → protects entire network (macro protection)
 
 Together = Defense in Depth
+
+## Azure Bastion
+
+Azure Bastion provides secure RDP/SSH access to VMs without exposing them to the internet.
+
+Problem:
+Opening RDP (3389) or SSH (22) ports allows attackers to brute-force login.
+
+Solution:
+Connect through Azure Portal → Bastion → Private IP → VM
+
+---
+
+### Security Benefits
+- No public IP required on VMs
+- Prevents port scanning attacks
+- TLS encrypted connection
+- Centralized secure access point
+- Reduces attack surface
+
+---
+
+### Architecture
+User → HTTPS → Azure Portal → Bastion → Private Network → VM
+
+---
+
+Purpose:
+Secure administrative access to cloud servers
