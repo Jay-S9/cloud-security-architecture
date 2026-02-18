@@ -55,3 +55,23 @@ Copilot integrates with existing security tools and knowledge bases and processe
 
 ## Enterprise benefit
 Allows organizations to operate security operations at machine speed instead of human speed, improving detection accuracy and reducing response latency.
+
+## Terminology and architecture flow
+Security Copilot operates through a structured pipeline:
+
+Prompt → Orchestrator → Plugins/Capabilities → Security Data → Response
+
+## Key concepts
+- Session: a single investigation conversation maintaining context
+- Prompt: analyst request in natural language
+- Capability: a specific security function (log analysis, script decoding, query generation)
+- Plugin: integration with a security data source (Defender, Sentinel, Intune, etc.)
+- Orchestrator: system that selects and combines capabilities to answer the prompt
+
+## Workspaces
+Workspaces act as security boundaries separating environments or teams.  
+They support role-based access, cost management, and regulatory data isolation — important in financial institutions.
+
+## Agents
+Security Copilot agents automate repetitive security operations such as triage, remediation guidance, and policy handling, moving SOC operations toward automated response systems.
+
