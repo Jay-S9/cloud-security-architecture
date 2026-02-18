@@ -31,3 +31,11 @@ This improves SOC (Security Operations Center) efficiency and incident response 
 Banks require fast detection and response to prevent fraud, account takeover, and data breaches.
 
 AI-assisted investigation reduces response latency and human error in high-volume security environments.
+
+## Problem it solves
+Organizations face two major security challenges:
+- Increasing volume and complexity of cyberattacks
+- Shortage of skilled security analysts
+
+Security Copilot allows analysts to process security signals at machine speed, reducing mean time to respond (MTTR) and enabling faster containment of threats.
+
