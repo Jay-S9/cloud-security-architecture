@@ -15,3 +15,23 @@ Cloud environments constantly change — new resources, configuration updates, a
 Microsoft Defender for Cloud continuously evaluates the environment to detect risks, misconfigurations, and active threats.
 
 Security becomes an ongoing process rather than a one-time configuration.
+
+## Microsoft Defender for Cloud
+
+Microsoft Defender for Cloud is a cloud-native application protection platform that monitors security across development, configuration, and runtime environments.
+
+### Three Pillars
+
+1. DevSecOps
+Security during development. Scans repositories, pipelines, and dependencies to prevent insecure code from deployment.
+
+2. Cloud Security Posture Management (CSPM)
+Continuously evaluates configurations and provides recommendations to prevent vulnerabilities.
+
+3. Cloud Workload Protection Platform (CWPP)
+Detects and responds to threats affecting running workloads such as VMs, containers, databases, and storage.
+
+Security coverage lifecycle:
+Build → DevSecOps
+Deploy → CSPM
+Run → CWPP
