@@ -137,3 +137,8 @@ Users only receive responses based on permissions they already have in connected
 
 ## Security principle
 AI operates under governance: auditability, traceability, and access control — essential for regulated industries like finance.
+
+## Module takeaway
+Microsoft Security Copilot is an AI-assisted investigation system that helps security teams process large volumes of alerts, correlate signals across tools, and respond faster to incidents.
+
+It integrates multiple security platforms into a single analysis workflow while maintaining auditability, data privacy, and role-based access — making it suitable for regulated environments such as financial institutions.
