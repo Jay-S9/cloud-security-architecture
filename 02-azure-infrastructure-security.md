@@ -213,3 +213,36 @@ User → HTTPS → Azure Portal → Bastion → Private Network → VM
 
 Purpose:
 Secure administrative access to cloud servers
+
+## Azure Key Vault
+
+Azure Key Vault securely stores sensitive information (secrets).
+
+Secrets include:
+- Passwords
+- API keys
+- Certificates
+- Encryption keys
+
+---
+
+### Problem
+Hardcoded credentials in applications can be leaked and cause breaches.
+
+### Solution
+Applications request secrets dynamically from Key Vault.
+
+App → Identity → Key Vault → Secret → Resource
+
+---
+
+### Security Features
+- Authentication via Microsoft Entra ID
+- Authorization via RBAC
+- Access logging and monitoring
+- Hardware Security Module (Premium tier)
+
+---
+
+### Purpose
+Centralized secret management and credential protection
