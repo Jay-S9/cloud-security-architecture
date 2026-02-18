@@ -78,3 +78,33 @@ Centralized firewall design improves auditability and policy consistency.
 
 ### Integration with Security Copilot
 Firewall logs can be sent to Log Analytics and analyzed via Security Copilot, linking preventive controls with investigative capabilities.
+
+# Azure Network Security Layers
+
+## DDoS Protection
+Protects applications from traffic flooding attacks.
+- Stops volumetric and protocol attacks
+- Works at Layer 3 & 4
+- Learns normal traffic patterns
+- Automatically mitigates attacks
+
+## Azure Firewall
+Central network traffic controller.
+- Filters inbound & outbound traffic
+- Supports NAT (SNAT/DNAT)
+- Uses threat intelligence feeds
+- Stateful firewall
+
+## Web Application Firewall (WAF)
+Protects web applications from exploits.
+- SQL injection
+- Cross-site scripting (XSS)
+- HTTP flood attacks
+- Works at Layer 7
+
+---
+
+### Memory Tip
+Flood → DDoS Protection  
+Access → Firewall  
+Exploit → WAF
