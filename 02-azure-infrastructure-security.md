@@ -108,3 +108,35 @@ Protects web applications from exploits.
 Flood → DDoS Protection  
 Access → Firewall  
 Exploit → WAF
+
+## Network Segmentation (Azure VNet)
+
+Network segmentation divides infrastructure into isolated zones to limit damage during a breach.
+
+Why it exists:
+- Contain attackers (Assume Breach principle)
+- Control communication paths
+- Apply governance policies
+- Support Zero Trust architecture
+
+### Azure Virtual Network (VNet)
+Private network inside Azure cloud.
+
+Key properties:
+- Default: no communication allowed between VNets
+- Must explicitly allow traffic
+- Can create multiple subnets inside a VNet
+- Isolates workloads (apps, databases, services)
+
+Security Benefit:
+If one segment is compromised → attacker cannot move laterally across the network.
+
+---
+
+### Real World Analogy
+Office building:
+- HR room
+- Finance room
+- Server room
+
+Breaking into HR room ≠ access to Finance records
