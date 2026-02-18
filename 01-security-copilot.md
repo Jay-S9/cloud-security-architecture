@@ -112,3 +112,28 @@ Summarize incident 15134 from Microsoft Defender XDR for a management report and
 
 ## Operational insight
 Security AI is guided AI — analysts direct the investigation while AI accelerates analysis and reporting.
+
+## Deployment and governance model
+Security Copilot requires controlled onboarding before usage:
+
+Compute → Environment → Permissions
+
+### Capacity (SCU)
+Security Compute Units (SCU) represent AI processing power.  
+Organizations provision baseline capacity and allow overage for attack spikes, ensuring predictable cost and resilience.
+
+### Environment configuration
+Admins configure:
+- data residency region
+- audit logging
+- plugin data access
+- compliance controls
+
+This ensures AI operates within regulatory boundaries.
+
+### Role-based access
+Copilot follows least-privilege access.  
+Users only receive responses based on permissions they already have in connected security systems.
+
+## Security principle
+AI operates under governance: auditability, traceability, and access control — essential for regulated industries like finance.
