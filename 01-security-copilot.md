@@ -91,3 +91,24 @@ Prompt → Plan → Collect Data → Analyze → Validate → Explain
 ## Explainable AI
 Copilot provides a process log showing which capabilities and data sources were used.  
 This enables verification and trust — important for regulated environments like finance.
+
+## Effective prompting structure
+Useful responses depend on structured prompts.  
+Security Copilot prompts follow a 4-part model:
+
+Goal + Context + Expectations + Source
+
+- Goal: specific security question or incident
+- Context: why the information is needed
+- Expectations: desired output format (summary, actions, report)
+- Source: system or data location to analyze
+
+## Example
+Weak prompt:
+Summarize incident 15134
+
+Strong prompt:
+Summarize incident 15134 from Microsoft Defender XDR for a management report and list affected entities.
+
+## Operational insight
+Security AI is guided AI — analysts direct the investigation while AI accelerates analysis and reporting.
