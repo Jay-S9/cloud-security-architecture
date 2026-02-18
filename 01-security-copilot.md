@@ -75,3 +75,19 @@ They support role-based access, cost management, and regulatory data isolation �
 ## Agents
 Security Copilot agents automate repetitive security operations such as triage, remediation guidance, and policy handling, moving SOC operations toward automated response systems.
 
+## How prompt processing works
+Security Copilot follows an investigation-style pipeline:
+
+Prompt → Plan → Collect Data → Analyze → Validate → Explain
+
+### Processing stages
+1. Orchestrator – creates an investigation plan
+2. Build Context – gathers relevant security telemetry
+3. Plugins – analyze data across security tools
+4. Responding – correlates findings using AI reasoning
+5. Safety Checks – validates output for responsible AI
+6. Response – returns human-readable explanation
+
+## Explainable AI
+Copilot provides a process log showing which capabilities and data sources were used.  
+This enables verification and trust — important for regulated environments like finance.
