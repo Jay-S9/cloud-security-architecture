@@ -140,3 +140,47 @@ Office building:
 - Server room
 
 Breaking into HR room ≠ access to Finance records
+
+## Azure Network Security Groups (NSG)
+
+NSG filters traffic to and from Azure resources (VMs/Subnets).
+
+Purpose:
+Prevent lateral movement after a breach.
+
+---
+
+### How NSG Works
+Traffic evaluated using:
+- Source IP
+- Source Port
+- Destination IP
+- Destination Port
+- Protocol
+
+Rules:
+ALLOW or DENY
+
+Lower priority number = evaluated first.
+
+---
+
+### Default Security Behavior
+Inbound:
+- Allow Virtual Network
+- Allow Azure Load Balancer
+- Deny all others
+
+Outbound:
+- Allow internal traffic
+- Allow internet
+- Deny rest
+
+---
+
+### NSG vs Azure Firewall
+
+NSG → protects individual VM/subnet (micro protection)
+Azure Firewall → protects entire network (macro protection)
+
+Together = Defense in Depth
